@@ -144,6 +144,34 @@ void vertices_ady(Lista G, Nodo nodoA){
 		nodo= nodo->sig;
 	}	   
 }
+
+
+/*Algoritmo de Kruskal*/
+void kruskal_algoritmo(Lista G){
+	Lista ArbolMinimo;
+	inicializa(&ArbolMinimo);/*inicializa el arbol*/
+	
+	int num_vertex;
+	int num_vertex_aux;
+	int num_aristas;
+	num_aristas = 0;
+	num_vertex = G.tam;
+	num_vertex_aux = 0; 
+	
+	/*Se repite  el numero total de nodos existentes */
+	
+		/*busca el minimo elemento de aristas*/
+		busca_arista_min(G);
+		/*verificamos que no se crean ciclos*/
+	
+		/*agregamos arista a nuestro nuevo arbol*/
+		
+	/*Fin de las repeticiones de ciclo*/	
+}
+
+
+
+
 /*
 //Adyacencia entre nodo A y Nodo B
 void vertice_a_adyacente_b(Lista G){
