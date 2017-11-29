@@ -33,13 +33,12 @@ void imprimeDatoArista(Dato dato){
 	Arista arista=*(Arista*)dato;
 	printf("Destino de Arista: %d\n",arista.destino);
 }
-
 void vertexAdyacentes(Dato a, Dato b){
-	Arista arista=*(Arista*)a;
-	int aristaB = (int)b; /*id de arista a comparar*/
+	Arista aristaA=*(Arista*)a;
+	Arista aristaB=*(Arista*)b;
 	
-	if(arista.destino ==aristaB){
-		printf("\nVertice: %d es adyacente a Vertice: %d",arista.destino,aristaB);
+	if(aristaB.destino == aristaA.destino){
+		printf("\nVertice: %d es adyacente a Vertice: %d",aristaB.destino,aristaA.destino);
 	}	
 	
 }
